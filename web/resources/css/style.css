@@ -1,0 +1,211 @@
+
+body {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#login {
+    position: absolute;
+    left: 38%;
+    top: 20%;
+    box-shadow: 0px 5px 14px 1px #3e7327;
+    padding: 20px;
+    height: 155px;
+
+}
+
+#loginButton {
+    box-shadow: 0px 10px 14px -7px #3e7327;
+    background-color: #77b55a;
+    border-radius: 4px;
+    border: 1px solid #4b8f29;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #5b8a3c;
+    float: right;
+}
+
+#loginButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.uidfield, .passfield {
+    background: #F1F1F1;
+    background-position: 5px -7px;
+    padding: 10px 10px 10px 25px;
+    margin: 4px;
+    width: 275px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px #CCC inset, 0 1px 0 #FFF;
+}
+
+.uidfield, .passfield:focus {
+    background-color: #FFF;
+    border-color: #E8C291;
+    box-shadow: 0 0 0 1px #E8C291 inset;
+}
+
+.uidfield {
+    background-image: url('../images/icon_user.png');
+    background-repeat: no-repeat;
+}
+
+.passfield {
+    background-image: url('../images/icon_password.png');
+    background-repeat: no-repeat;
+}
+
+.login_failed {
+    color: crimson;
+}
+
+.mealplan {
+    margin-top: 40px;
+    padding: 0px;
+    width: 500px;
+    box-shadow: 5px 5px 5px #888888;
+    border: 1px solid #3f7f00;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mealplan table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    padding: 5px;
+}
+
+.mealplan tr:last-child td:last-child {
+    border-bottom-right-radius: 0px;
+}
+
+.mealplan table td {
+    font-size: 18px;
+}
+
+.mealplan tr:nth-child(odd) {
+    background-color: #F1F1F1;
+}
+
+.mealplan tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.mealplan td {
+    vertical-align: middle;
+    border: 1px solid #3f7f00;
+    border-width: 0px 1px 1px 0px;
+    text-align: left;
+    padding: 7px;
+    font-size: 10px;
+    font-family: Arial;
+    font-weight: normal;
+    color: #000000;
+}
+
+.mealplan tr:last-child td {
+    border-width: 0px 1px 0px 0px;
+}
+
+.mealplan tr td:last-child {
+    border-width: 0px 0px 1px 0px;
+}
+
+.mealplan tr:last-child td:last-child {
+    border-width: 0px 0px 0px 0px;
+}
+
+.mealplan tr:first-child td {
+    background: -o-linear-gradient(bottom, #5fbf00 5%, #3f7f00 100%);
+    background-color: #77b55a;;
+    border: 0px solid #3f7f00;
+    text-align: center;
+    border-width: 0px 0px 1px 1px;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.mealplan tr:first-child:hover td {
+    background: -o-linear-gradient(bottom, #5fbf00 5%, #3f7f00 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5fbf00), color-stop(1, #3f7f00));
+    background-color: #5fbf00;
+}
+
+.mealplan tr:first-child td:first-child {
+    border-width: 0px 0px 1px 0px;
+}
+
+.mealplan tr:first-child td:last-child {
+    border-width: 0px 0px 1px 1px;
+}
+
+.title {
+    color: #77b55a;
+}
+
+hr {
+    color: white;
+}
+
+.full_less {
+    color: green;
+    margin-left: 55%;
+    padding: 5px;
+    font-size: 20px;
+    font-family: Helvetica;
+}
+
+#button_save {
+    color: gray;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.edit {
+    background: none;
+    color: gray;
+    font-weight: bold;
+    border: none;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.txt {
+    padding: 0px;
+    background-color: white;
+
+}
+
+.errorMessage {
+    box-shadow: 0px 10px 14px -7px #3e7327;
+    background-color:#77b55a;
+    border-radius:4px;
+    border:1px solid #4b8f29;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:arial,serif;
+    font-size:13px;
+    font-weight:bold;
+    padding:6px 12px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #5b8a3c;
+    text-align: center;
+    margin: 200px;
+}
