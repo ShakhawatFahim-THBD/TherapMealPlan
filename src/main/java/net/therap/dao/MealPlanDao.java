@@ -18,6 +18,7 @@ public class MealPlanDao {
 
     public MealPlan getMealPlanByDay(String day) {
         day = day.toLowerCase();
+
         String query = "SELECT day, breakfast, lunch FROM meal_plan WHERE day = ?";
 
         List<MealPlan> mealPlanList = QueryExecutor.executeSelectQuery(query, new ResultSetProcessor<MealPlan>() {
@@ -56,6 +57,7 @@ public class MealPlanDao {
 
     public void updateMealPlan(MealPlan updatedMealPlan) {
         String query = "UPDATE meal_plan SET breakfast= ?, lunch = ? WHERE day = ?";
+
         QueryExecutor.executeUpdateQuery(query, updatedMealPlan.getBreakfastMenu(), updatedMealPlan.getLunchMenu(),
                 updatedMealPlan.getDay());
     }

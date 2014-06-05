@@ -56,12 +56,10 @@ public class LoginController extends HttpServlet {
         boolean isValidUser = loginService.isValidUser(user);
         if (isValidUser) {
             logger.info("sending response to " + user.getId());
-
             startUserSession(user, req);
             sendResponseToValidUser(resp, user);
         } else {
             logger.info("wrong userid or password from "+user.getId());
-
             sendResponseToInvalidUser(req, resp);
         }
 

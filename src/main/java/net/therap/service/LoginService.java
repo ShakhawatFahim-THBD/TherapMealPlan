@@ -16,6 +16,7 @@ public class LoginService {
 
         UserDao userDao = new UserDao();
         User retrievedUser = userDao.getUser(user);
+
         if (retrievedUser != null && retrievedUser.getPassword().equals(user.getPassword())) {
             isValidUser = true;
         }
