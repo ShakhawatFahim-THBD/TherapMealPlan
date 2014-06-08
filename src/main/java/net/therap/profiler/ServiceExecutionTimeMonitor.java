@@ -1,4 +1,4 @@
-package net.therap.aspect;
+package net.therap.profiler;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 @Aspect
 public class ServiceExecutionTimeMonitor {
 
-    private static final Logger LOGGER  = LoggerFactory.getLogger(ServiceExecutionTimeMonitor.class);
+    private Logger logger = LoggerFactory.getLogger(ServiceExecutionTimeMonitor.class);
 
     private long executionStartTime;
     private long executionEndTime;
@@ -35,7 +35,7 @@ public class ServiceExecutionTimeMonitor {
     @After ("execution(* net.therap.service..*.*(..))")
     public void logServiceMethodExecutionTime(JoinPoint joinPoint){
         String methodName = joinPoint.getSignature().getName();
-        LOGGER.info("Execution time : "+methodName+"() : "+(executionEndTime - executionStartTime)+" ms");
+        logger.info("Execution time : " + methodName + "() : " + (executionEndTime - executionStartTime) + " ms");
     }
 
 }
